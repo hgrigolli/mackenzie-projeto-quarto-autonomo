@@ -1,13 +1,13 @@
-# [NOME DA DISCIPLINA] X sem. 20XX
+# [NOME DA DISCIPLINA] 2º sem. 2018
 
-## Turma XXX
-## Projeto: "nome do projeto"
+## Turma 01N11
+## Projeto: "Quarto Autonomo"
 ## Integrantes do grupo:
 
-* Aluno 1
-* Aluno 2
-* Aluno 3
-* Aluno 4
+* Carlos Henrique Chilante - 31898416
+* Gustavo Avelões - 41882318
+* Henrique Nóbrega Grigolli - 418216661
+* Thiago Ribeiro - 41891147
 
 ## Descrição resumida do projeto
 
