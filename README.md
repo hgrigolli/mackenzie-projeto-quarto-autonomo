@@ -1,4 +1,4 @@
-# [NOME DA DISCIPLINA] 2º sem. 2018
+# [CIRCUITOS ELÉTRICOS E ELETRÔNICOS] 2º sem. 2018
 
 ## Turma 01N11
 ## Projeto: "Quarto Autonomo"
