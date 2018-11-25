@@ -11,7 +11,7 @@
 
 ## Descrição resumida do projeto
 
-O projeto Quarto Autonomo prevê a automação de um comôdo da casa, que pode ser expandido para o restante da residência. O quarto possui sensor de presença para acender a luz automaticamente se hora >= 18:00 e <= 23:00, climatizar o ambiente usando sensor de umidade e de temperatura. 
+O projeto Quarto Autonomo prevê a automação de um comôdo da casa, que pode ser expandido para o restante da residência. O quarto possui sensor de presença que, ao detectar movimento, o usuário recebe um e-mail com um aviso. Também neste projeto iremos acionar uma ventoinha baseado na tempertura do quarto, esta tempertatura é lida usando um sensor de umidade e de temperatura. 
 
 _______________________________________
 Obs:
