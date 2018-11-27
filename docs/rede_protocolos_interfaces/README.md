@@ -1,6 +1,6 @@
 # Rede / Protocolo / Interface:
 ### Interfaces de rede utilizadas
-* WiFI
+* WiFi
 
 ### Protocolo
 * TCP/IP
