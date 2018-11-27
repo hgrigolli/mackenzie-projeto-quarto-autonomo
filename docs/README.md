@@ -1,6 +1,6 @@
 ## Documentação do Projeto
 
-![PDF]{Projeto_Circuito_Quarto_Arduino.pdf} contém a descrição geral do projeto
+Projeto_Circuito_Quarto_Arduino.pdf contém a descrição geral do projeto
 
 `\hardware` Contém a descrição do hardware utilizado
 
