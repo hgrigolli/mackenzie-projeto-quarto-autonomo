@@ -1,6 +1,6 @@
 # Descriçao do Hardware
 
-1) Lista de Peças
+## Lista de Peças
 
 * 1 Protoboard de 400 pontos ou maior
 * 1 Arduino UNO R3
@@ -12,15 +12,15 @@
 * 4 resistores de 10k ohms
 * Jumpers
 
-2) Desenho do Circuito
+## Desenho do Circuito
 
 ![Circuito](images/ProjetoCircuito-QuartAuto.png)
 
-3) Esquema eletrônico
+## Esquema eletrônico
 
 ![Esquema](images/projetocasa_Esquemático.png)
 
-4) Materiais para confecção de caixas
+## Materiais para confecção de caixas
 
 * 4 Placas de Madeira MDF 30cm x 30cm
 * 1 Pacote de pregos 1.6mm
