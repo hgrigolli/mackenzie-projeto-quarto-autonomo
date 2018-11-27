@@ -1,4 +1,4 @@
-# Nesta seção devem ser descritas:
+# Rede / Protocolo / Interface:
 1. Interfaces de rede utilizadas
 * WiFI
 
