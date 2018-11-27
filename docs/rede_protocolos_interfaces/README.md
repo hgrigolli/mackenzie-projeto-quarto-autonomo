@@ -1,11 +1,11 @@
 # Rede / Protocolo / Interface:
-1. Interfaces de rede utilizadas
+### Interfaces de rede utilizadas
 * WiFI
 
-2. Protocolo
+### Protocolo
 * TCP/IP
 
-3. Descrição de aplicativos utilizados
+### Descrição de aplicativos utilizados
 
 * [Blynk](https://www.blynk.cc/)
  -> Aplicativo usado para fazer a comunicação entre o módulo ESP8266 e o smartphone.
