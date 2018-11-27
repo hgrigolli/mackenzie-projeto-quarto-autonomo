@@ -16,6 +16,6 @@ O projeto Quarto Automatizado prevê a automação de um comôdo da casa, que po
 _______________________________________
 Obs:
 
-![\src](`src/`) Contém os códigos desenvolvidos
+![https://github.com/hgrigolli/mackenzie-projeto-quarto-autonomo/tree/master/src](`src/`) Contém os códigos desenvolvidos
 
-`doc/` Documentação do projeto
+![https://github.com/hgrigolli/mackenzie-projeto-quarto-autonomo/tree/master/doc](`doc/`) Documentação do projeto
