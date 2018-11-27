@@ -23,6 +23,4 @@
 ## Materiais para confecção de caixas
 
 * 4 Placas de Madeira MDF 30cm x 30cm
-* 1 Pacote de pregos 1.6mm
 * 1 Fita Dupla Face
-* 1 Martelo
