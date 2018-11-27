@@ -16,6 +16,6 @@ O projeto Quarto Automatizado prevê a automação de um comôdo da casa, que po
 _______________________________________
 Obs:
 
-`src/` Contém os códigos desenvolvidos
+![\src](`src/`) Contém os códigos desenvolvidos
 
 `doc/` Documentação do projeto
