@@ -393,15 +393,5 @@ Com o código, se houver algum movimento detectado pelo sensor de presença, e c
 Versões mais atualizadas deste projeto podem ser acessadas através do link:
 
 \center{\href{https://github.com/hgrigolli/mackenzie-projeto-quarto-autonomo}{Projeto Quarto Automatizado}}
-% ---
-
-% ----------------------------------------------------------
-% ELEMENTOS PÓS-TEXTUAIS
-% ----------------------------------------------------------
-% ----------------------------------------------------------
-\postextual
-% ----------------------------------------------------------
-% Referências bibliográficas
-% ----------------------------------------------------------
 
 \end{document}
