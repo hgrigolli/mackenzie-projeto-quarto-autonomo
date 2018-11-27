@@ -1,0 +1,407 @@
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	oneside,			% para impressão em verso e anverso. Oposto a oneside
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+	]{abntex2}
+
+% ---
+% Pacotes básicos 
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern	
+%\usepackage{lmodern}
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{blindtext}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\usepackage{babel}
+\usepackage{listings}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+% ---
+		
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+\renewcommand{\imprimircapa}{%
+    \begin{capa}%
+        \center
+        {\ABNTEXchapterfont\Large\imprimirinstituicao}
+    
+        \vspace*{1cm}
+
+
+        
+        {\ABNTEXchapterfont\large\imprimirautor}
+        
+        \vfill
+        \begin{center}
+        \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+        \end{center}
+        \vfill
+        
+        \vspace*{1cm}
+        
+        \large\imprimirlocal
+        
+        \large\imprimirdata
+        
+        \vspace*{1cm}
+    \end{capa}
+}
+
+\makeatletter
+
+\makeatother
+
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+
+\titulo{Quarto Automatizado}
+\autor{
+    Carlos Henrique Chilante\\
+    \texttt{31898416}
+    \\
+    Gustavo Avelões\\
+    \texttt{41882318}
+    \\
+    Henrique Grigolli\\
+    \texttt{41821661}
+    \\
+    Thiago Ribeiro\\
+    \texttt{41891147}
+}
+\local{São Paulo - SP}
+\data{2018}
+
+\instituicao{UNIVERSIDADE PRESBITERIANA MACKENZIE}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+% ---
+
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+\selectlanguage{brazil}
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+
+\makeatother
+
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+% inserir lista de abreviaturas e siglas
+
+% ---
+% inserir lista de símbolos
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+
+\textual
+
+\chapter{Introdução}
+
+O projeto Quarto Automatizado prevê a automação de um comôdo da casa, que pode ser expandido para o restante da residência. O quarto possui sensor de presença que, ao detectar movimento, o usuário recebe um e-mail com um aviso. Também neste projeto iremos acionar uma ventoinha baseado na tempertura do quarto, esta tempertatura é lida usando um sensor de umidade e de temperatura.
+
+\chapter{Montagem do Projeto}
+
+\section{Maquete}
+
+\subsection{Materiais para a maquete}
+Para desenvolver este projeto é necessário seguir estes passo a passo para otimizar o tempo e obter sucesso no projeto da maquete do quarto:
+
+\begin{itemize}
+\item 4 Placas de Madeira MDF 30cm x 30cm
+\item 1 Fita Dupla Face
+\end{itemize}
+
+\subsection{Montagem da Maquete}
+
+As quatro placas formarão três paredes e o chão do quarto, sendo que uma parede e o teto não são incluídas, permitindo a melhor visualização do esquema do quarto automatizado. 
+
+Para a montagem, basta juntas as placas de madeira conforme dito acima e cole-as ou pregue-as.
+
+\section{Parte eletônica}
+
+\subsection{Componentes para a parte eletrônica}
+
+\begin{itemize}
+\item 1 Protoboard de 400 pontos ou maior
+\item 1 Arduino UNO R3
+\item 1 Cabo USB Serial padrão
+\item 1 Módulo Relé de 4 vias
+\item 1 Senor de Presença PIR - HC-SR501
+\item 1 Módulo WiFi - ESP8266
+\item 1 Adaptador para ESP8266 da RoboCore (não necessário mas altamente recomendado)
+\item 1 Sensor de Temperatura DHT22
+\item 4 resistores de 10k$\Omega$
+\item Jumpers
+\end{itemize}
+
+\subsection{Circuito}
+Monte o seguinte circuito:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=15cm]{imagens/projetocasa_bb-1.png}
+    \caption{Circuito Projeto Quarto Automatizado}
+    \label{fig:4oauto}
+\end{figure}
+
+\newpage
+\subsection{Código}
+
+Baixe as bibliotecas do sensor DHT22 e do Blynk, instale-as e depois cheque novamente suas ligações e, grave o seguinte código na placa:
+
+Bibliotecas:
+\begin{itemize}
+    \item \href{https://github.com/adafruit/DHT-sensor-library}{Biblioteca DHT22}
+    \item \href{https://github.com/adafruit/Adafruit_Sensor}{Biblioteca necessária para o funcionamento do sensor}
+    \item \href{https://www.blynk.cc/getting-started/}{Biblioteca do Blynk}
+\end{itemize}
+
+    \begin{lstlisting}
+#include <DHT_U.h>
+
+#include <ESP8266_Lib.h> 
+#include <BlynkSimpleShieldEsp8266.h> 
+#include <SoftwareSerial.h> 
+#include "dht.h" 
+
+SoftwareSerial EspSerial(10, 11);
+
+//AUTH TOKEN (FORNECIDO PELO PROJETO NO BLYNK E POR E-MAIL)
+char auth[] = "SEU CODIGO TOKEN"; 
+
+BlynkTimer timer; //OBJETO DO TIPO BlynkTimer
+
+
+float temperatura;
+float umidade;
+
+const int pinoDHT22 = 9; 
+const int pinoRele1 = 2; 
+const int pinoRele2 = 3; 
+const int pinoRele3 = 4; 
+const int pinoRele4 = 5; 
+
+const int pir_signal_pin = 6;
+
+int flag = 0;
+boolean pir_status;
+
+DHT dht(pinoDHT22, DHT22);
+
+//VARIAVEL QUE ARMAZENA O NOME DA REDE SEM FIO EM QUE VAI CONECTAR
+char ssid[] = "SUA WIFI AQUI";
+//VARIAVEL QUE ARMAZENA A SENHA DA REDE SEM FIO EM QUE VAI CONECTAR
+char pass[] = "SENHA DE SUA WIFI AQUI";
+
+//TAXA DE COMUNICACAO DO ESP8266 COM O ARDUINO UNO
+// (SEMPRE UTILIZE 9600 BAUDS)
+#define ESP8266_BAUD 9600 
+
+ESP8266 wifi(&EspSerial);
+
+void setup(){
+  dht.begin();
+  
+  pinMode(pinoRele1, OUTPUT); 
+  pinMode(pinoRele2, OUTPUT); 
+  pinMode(pinoRele3, OUTPUT);
+  pinMode(pinoRele4, OUTPUT);
+  pinMode(pir_signal_pin,INPUT);
+
+  
+  EspSerial.begin(ESP8266_BAUD);
+  delay(10);
+
+  Blynk.begin(auth, wifi, ssid, pass);
+
+  timer.setInterval(1000L, sendUptime);
+  
+  digitalWrite(pinoRele1, HIGH); //RELE INICIA DESLIGADO
+  digitalWrite(pinoRele2, HIGH); //RELE INICIA DESLIGADO
+  digitalWrite(pinoRele3, HIGH); //RELE INICIA DESLIGADO
+  digitalWrite(pinoRele4, HIGH); //RELE INICIA DESLIGADO
+}
+
+void sendUptime(){
+  
+  Blynk.virtualWrite(1, dht.readTemperature() );
+  Blynk.virtualWrite(2, dht.readHumidity() );
+  
+  pir_status = digitalRead(pir_signal_pin);
+  Serial.println(pir_status);
+  if(pir_status == HIGH && flag == 0){
+    Blynk.email("seu email aqui", "Movimento Detectado!");
+    flag = 1;
+  }
+  else {
+    flag = 0;
+  }
+  
+}
+
+void loop(){
+  Blynk.run(); //INICIALIZA O BLYNK
+  timer.run(); //INICIALIZA O TIMER
+}
+    \end{lstlisting}
+
+Lembre-se de que, ao criar um projeto no Blynk, você receberá por e-mail um token e você deve mudar no código as variavéis wifi e senha para a WiFi que será conectada no módulo.
+
+\subsection{Configurando o APP Blynk}
+
+Depois de baixado o APP Blynk, crie um porjeto, dê um nome para ele e selecione o Arduino UNO como dispositivo e o tipo da conexão WiFi.
+
+Na tela principal do projeto, vá até a lista de widgets, selecione um “Button” e selecione também dois “Gauge” (um para temperatura e outro para umidade)
+
+Com os widgets inseridos no contêiner principal, clique sobre o “Button” para acessar as configurações. Em “OUTPUT” selecione o tipo de pino “Digital” e D4. Faça isso mais três vezes para cada relé e sempre mudando o pino digital conforme foi conectado ao Arduino.
+Em cada pino digital, ele deve começar no 1 e ir ao 0 e, deve ser configurado como Switch
+
+Clique sobre um dos “Gauge” para acessar as configurações. Em “OUTPUT” selecione o tipo de pino “Virtual” e V1. Dê um nome para ele, no caso Temperature e faça com que ele vá de 0 a 50. Faça o mesmo para o "Gauge" de Umidade e ele irá de 0 a 100.
+
+Clique no botão Play e depois ligue o Arduino. Assim que o módulo se conectar, você terá total controle sobre os relés e irá ver o valor da temperatura e da umidade atual.
+
+Com o código, se houver algum movimento detectado pelo sensor de presença, e com o e-mail configurado, você irá receber um e-mail de aviso.
+
+\subsection{Esquema elétrico}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=15cm]{imagens/projetocasa_Esquematico.png}
+    \caption{Esquema elétrico feito no Fritizing}
+    \label{fig:esqEletrico}
+\end{figure}
+
+\chapter{Projeto Online}
+Versões mais atualizadas deste projeto podem ser acessadas através do link:
+
+\center{\href{https://github.com/hgrigolli/mackenzie-projeto-quarto-autonomo}{Projeto Quarto Automatizado}}
+% ---
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+% ----------------------------------------------------------
+\postextual
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+
+\end{document}
