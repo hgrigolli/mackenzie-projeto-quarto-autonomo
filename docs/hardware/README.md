@@ -9,7 +9,7 @@
 * 1 Módulo WiFi - ESP8266
 * 1 Adaptador para ESP8266 da RoboCore (não necessário mas altamente recomendado)
 * 1 Sensor de Temperatura DHT22
-* 4 resistores de 10k ohms
+* 4 resistores de 10kΩ
 * Jumpers
 
 ## Desenho do Circuito
