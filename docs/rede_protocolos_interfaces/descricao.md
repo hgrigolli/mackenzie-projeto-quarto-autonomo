@@ -2,7 +2,7 @@
 1. Interfaces de rede utilizadas
 * WiFI
 
-2. Protocolos (Firmata, MQTT, CoAP, HTTP, etc)
+2. Protocolo
 * TCP/IP
 
 3. Descrição de aplicativos utilizados
