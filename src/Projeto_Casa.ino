@@ -7,25 +7,29 @@
 
 SoftwareSerial EspSerial(10, 11); //PINOS QUE EMULAM A SERIAL (PINO 10 É O RX E PINO 11 É O TX)
 
-char auth[] = "278a89d66f8443ffa1556b228d24ec04"; //AUTH TOKEN (FORNECIDO PELO PROJETO NO BLYNK E POR E-MAIL)
+char auth[] = "SEU TOKEN AQUI"; //AUTH TOKEN (FORNECIDO PELO PROJETO NO BLYNK E POR E-MAIL)
 
 BlynkTimer timer; //OBJETO DO TIPO BlynkTimer
 
-
 float temperatura;
 float umidade;
-const int pinoDHT22 = 9; //PINO ANALÓGICO UTILIZADO PELO DHT11
-const int pinoRele1 = 2; //PINO DIGITAL UTILIZADO PELO MÓDULO RELÉ
-const int pinoRele2 = 3; //PINO DIGITAL UTILIZADO PELO MÓDULO RELÉ
-const int pinoRele3 = 4; //PINO DIGITAL UTILIZADO PELO MÓDULO RELÉ
-const int pinoRele4 = 5; //PINO DIGITAL UTILIZADO PELO MÓDULO RELÉ
+
+//PINO ANALÓGICO UTILIZADO PELO DHT22
+const int pinoDHT22 = 9; 
+ 
+//PINO DIGITAL UTILIZADO PELO MÓDULO RELÉ
+const int pinoRele1 = 2;
+const int pinoRele2 = 3; 
+const int pinoRele3 = 4; 
+const int pinoRele4 = 5; 
+
 const int pir_signal_pin = 6;
 int flag = 0;
 boolean pir_status;
 
 DHT dht(pinoDHT22, DHT22); //VARIÁVEL DO TIPO DHT
-char ssid[] = "Henrique iPhone"; //VARIÁVEL QUE ARMAZENA O NOME DA REDE SEM FIO EM QUE VAI CONECTAR
-char pass[] = "Docenela7"; //VARIÁVEL QUE ARMAZENA A SENHA DA REDE SEM FIO EM QUE VAI CONECTAR
+char ssid[] = "WIFI SSID"; //VARIÁVEL QUE ARMAZENA O NOME DA REDE SEM FIO EM QUE VAI CONECTAR
+char pass[] = "WIFI PASS"; //VARIÁVEL QUE ARMAZENA A SENHA DA REDE SEM FIO EM QUE VAI CONECTAR
 
 #define ESP8266_BAUD 9600 //TAXA DE COMUNICAÇÃO DO ESP8266 COM O ARDUINO UNO (SEMPRE UTILIZE 9600 BAUDS)
 
@@ -48,10 +52,11 @@ void setup(){
 
   timer.setInterval(1000L, sendUptime); //DEFINE O INTERVALO DE 1 SEGUNDO(1000L = 1000 MILISSEGUNDOS)
   //PARA EXECUÇÃO DA FUNÇÃO sendUptime
-  digitalWrite(pinoRele1, HIGH); //RELÉ INICIA DESLIGADO
-  digitalWrite(pinoRele2, HIGH); //RELÉ INICIA DESLIGADO
-  digitalWrite(pinoRele3, HIGH); //RELÉ INICIA DESLIGADO
-  digitalWrite(pinoRele4, HIGH); //RELÉ INICIA DESLIGADO
+  //RELÉ INICIA DESLIGADO
+  digitalWrite(pinoRele1, HIGH); 
+  digitalWrite(pinoRele2, HIGH); 
+  digitalWrite(pinoRele3, HIGH); 
+  digitalWrite(pinoRele4, HIGH); 
 }
 
 void sendUptime(){ //FUNÇÃO QUE OBTÉM A TEMPERATURA / UMIDADE E ENVIA O VALOR OBTIDO PARA OS WIDGETs GAUGE SENSOR
@@ -61,7 +66,7 @@ void sendUptime(){ //FUNÇÃO QUE OBTÉM A TEMPERATURA / UMIDADE E ENVIA O VALOR
   pir_status = digitalRead(pir_signal_pin);
   Serial.println(pir_status);
   if(pir_status == HIGH && flag == 0){
-    Blynk.email("henrigrigo@gmail.com", "Movimento Detectado!");
+    Blynk.email("example@mail.com", "Movimento Detectado!");
     flag = 1;
   }
   else {
