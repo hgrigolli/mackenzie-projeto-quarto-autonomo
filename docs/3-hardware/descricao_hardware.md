@@ -1,7 +1,5 @@
 # Descriçao do Hardware
 
-Deve conter:
-
 1) Lista de Peças
 
 * 1 Protoboard de 400 pontos ou maior
@@ -20,4 +18,11 @@ Deve conter:
 
 3) Esquema eletrônico
 
-4) Materiais para confecção de caixas e consoles (ou arquivos para impressão 3D)
+![Esquema](projetocasa_Esquemático.png)
+
+4) Materiais para confecção de caixas
+
+* 4 Placas de Madeira MDF 30cm x 30cm
+* 1 Pacote de pregos 1.6mm
+* 1 Fita Dupla Face
+* 1 Martelo
