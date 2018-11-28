@@ -8,7 +8,7 @@
 * 1 [Módulo Relé de 4 vias](Datasheet/Datasheet_Rele_5V.pdf)
 * 1 Senor de Presença PIR - [HC-SR501](Datasheet/PIR_HC_-_SR501_Datasheet.pdf)
 * 1 Módulo WiFi - [ESP8266](Datasheet/ESP8266_Datasheet.pdf)
-* 1 Adaptador para ESP8266 da RoboCore (não necessário mas altamente recomendado)
+* 1 [Adaptador para ESP8266 da RoboCore](https://www.robocore.net/loja/produtos/adaptador-para-esp8266.html) (não necessário mas altamente recomendado)
 * 1 Sensor de Temperatura [DHT22](Datasheet/DHT22_Datasheet.pdf)
 * 4 resistores de 10kΩ
 * Jumpers
