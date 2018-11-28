@@ -4,7 +4,7 @@
 ## Lista de Peças
 
 * 1 Protoboard de 400 pontos ou maior
-* 1 Arduino UNO R3
+* 1 [Arduino UNO R3](Datasheet/Arduino_Datasheet.pdf)
 * 1 Módulo Relé de 4 vias
 * 1 Senor de Presença PIR - HC-SR501
 * 1 Módulo WiFi - ESP8266
