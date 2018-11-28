@@ -11,7 +11,7 @@
 
 ## Descrição resumida do projeto
 
-O projeto Quarto Automatizado prevê a automação de um comôdo da casa, que pode ser expandido para o restante da residência. O quarto possui sensor de presença que, ao detectar movimento, o usuário recebe um e-mail com um aviso. Também neste projeto iremos acionar uma ventoinha baseado na tempertura do quarto, esta tempertatura é lida usando um sensor de umidade e de temperatura. 
+O projeto Quarto Automatizado prevê a automação de um comôdo da casa, que pode ser expandido para o restante da residência. O quarto possui sensor de presença que, ao detectar movimento, o usuário recebe um e-mail com um aviso. Também neste projeto iremos acionar uma ventoinha, uma tomada e uma lâmpada através do celular, e, o quarto possui um sensor de umidade e de temperatura e o módulo WiFi transmite essas informações para serem mostradas no celular. 
 
 _______________________________________
 Obs:
