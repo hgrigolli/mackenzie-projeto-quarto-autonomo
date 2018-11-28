@@ -1,6 +1,6 @@
 ## Documentação do Projeto
 
-[Projeto_Circuitos_Quarto_Automatizado.pdf](Projeto_Circuitos_Quarto_Automatizado.pdf) contém a descrição geral do projeto
+[Projeto Circuitos](Projeto_Circuitos.pdf) contém a descrição geral do projeto
 
 [`/hardware`](https://github.com/hgrigolli/mackenzie-projeto-quarto-autonomo/tree/master/docs/hardware) Contém a descrição do hardware utilizado
 
