@@ -15,11 +15,11 @@
 
 ## Desenho do Circuito
 
-![Circuito](images/ProjetoCircuito-QuartAuto.png)
+![Circuito](images/projetoquarto.png)
 
 ## Esquema eletrônico
 
-![Esquema](images/projetocasa_Esquemático.png)
+![Esquema](images/projetoquarto_esquema.png)
 
 ## Materiais para confecção de caixas
 
