@@ -18,4 +18,4 @@ Obs:
 
 [`/src`](https://github.com/hgrigolli/mackenzie-projeto-quarto-autonomo/tree/master/src) Contém os códigos desenvolvidos
 
-[`/doc`](https://github.com/hgrigolli/mackenzie-projeto-quarto-autonomo/tree/master/docs) Documentação do projeto
+[`/docs`](https://github.com/hgrigolli/mackenzie-projeto-quarto-autonomo/tree/master/docs) Documentação do projeto
