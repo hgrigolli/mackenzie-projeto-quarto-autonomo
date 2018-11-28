@@ -33,7 +33,6 @@
 \usepackage{hyperref}
 \usepackage{babel}
 \usepackage{listings}
-\usepackage{blindtext}
 \usepackage{enumitem}
 \usepackage[T1]{fontenc}
 % ---
@@ -122,12 +121,7 @@
 \data{2018}
 
 \instituicao{UNIVERSIDADE PRESBITERIANA MACKENZIE}
-% O preambulo deve conter o tipo do trabalho, o objetivo, 
-% o nome da instituição e a área de concentração 
-% ---
 
-
-% ---
 % Configurações de aparência do PDF final
 
 % alterando o aspecto da cor azul
