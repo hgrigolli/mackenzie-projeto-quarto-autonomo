@@ -23,5 +23,5 @@ Obs:
 
 _______________________________________
 Imagem do projeto:
-[!Montagem](https://github.com/hgrigolli/mackenzie-projeto-quarto-autonomo/tree/master/docs/hardware/images/montagem.jpeg)
+[!Montagem](docs/hardware/images/montagem.jpeg)
 
