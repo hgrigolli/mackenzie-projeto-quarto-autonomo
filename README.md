@@ -23,4 +23,5 @@ Obs:
 
 _______________________________________
 Imagem do projeto:
+[!Montagem](docs/hardware/images/montagem.jpeg)
 
